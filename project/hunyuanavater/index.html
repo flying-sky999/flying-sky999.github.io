@@ -8,7 +8,7 @@
           content="MotionMaster: Training-free Camera Motion Transfer For Video Generation">
     <meta name="keywords" content="Video Generation, Camera Motion transfer, Camera-Object Motion, Disentanglement">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MotionMaster: Training-free Camera Motion Transfer For Video Generation</title>
+    <title>HunyuanVideo-Avatar: Highly Dynamic And Consistent Audio-Driven Human Animation</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -51,8 +51,8 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">MotionMaster: Training-free Camera Motion Transfer For Video Generation</h1>
-            <div class="is-size-5 publication-authors">
+            <h1 class="title is-1 publication-title">HunyuanVideo-Avatar: Highly Dynamic And Consistent Audio-Driven Human Animation</h1>
+            <!-- <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="https://sjtuplayer.github.io/">Teng Hu</a><sup>1*</sup>,</span>
               <span class="author-block">
@@ -76,35 +76,18 @@
               <span class="author-block">
                 <a >Lizhuang Ma</a><sup>1</sup>
               </span>
-              <!-- <span class="author-block">
-                <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
-              </span>
-              <span class="author-block">
-                <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
-              </span> -->
-            </div>
-  
-            <!-- <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>University of Washington,</span>
-              <span class="author-block"><sup>2</sup>Google Research</span>
             </div> -->
-            <div class="is-size-5 publication-authors">
+            <!-- <div class="is-size-5 publication-authors">
               <span class="author-block"><sup>1</sup>Shanghai Jiao Tong University, Shanghai, China</span><br />
               <span class="author-block"><sup>2</sup>Youtu Lab, Tencent, Shanghai, China </span><br />
               <span class="author-block"><sup>3</sup>Harbin Institute of Technology, Harbin, China </span>
-            </div>
+            </div> -->
   
             <div class="column has-text-centered">
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2404.15789.pdf"
+                  <a href=""
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <i class="fas fa-file-pdf"></i>
@@ -113,7 +96,7 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2404.15789"
+                  <a href=""
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <i class="ai ai-arxiv"></i>
@@ -123,7 +106,7 @@
                 </span>
                 <!-- Code Link. -->
                 <span class="link-block">
-                  <a href="https://github.com/sjtuplayer/MotionMaster"
+                  <a href=""
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <i class="fab fa-github"></i>
@@ -131,15 +114,6 @@
                     <span>Code</span>
                     </a>
                 </span>
-                <!-- Dataset Link. -->
-                <!-- <span class="link-block">
-                  <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                     class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                        <i class="far fa-images"></i>
-                    </span>
-                    <span>Data</span>
-                    </a> -->
               </div>
   
             </div>
@@ -149,7 +123,7 @@
     </div>
   </section>
 
-<section class="section" id="teaser">
+<!-- <section class="section" id="teaser">
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
@@ -160,18 +134,13 @@
             Camera Motion Control
           </h3>
           <div class="item">
-<!--            <video id="teaser" autoplay controls muted loop playsinline height="100%">-->
-<!--              <source src="./static/videos/teaser.mp4"-->
-<!--                      type="video/mp4">-->
-<!--            </video>-->
-<!--            <img src="./static/my_images/teaser.gif" alt="GIF 1" autoplay loop playsinline height="100%">-->
 <iframe width="1024" height="576" src="https://www.youtube.com/embed/o3Fk4RgWC4A?si=RXqn2DaPy_4QfQYC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
       </div>
       </div>
   </div>
-</section>
+</section> -->
 
 
 
@@ -188,9 +157,6 @@
           <p>
             Audio-driven human animation has made significant progress in recent years. However, existing state-of-the-art methods still face challenges in handling multi-speaker audio-driven scenarios, non-frontal viewpoints, rendering facial emotions of portraits, and generating immersive, realistic backgrounds. In this paper, we propose HunyuanVideo-Avatar, a model based on the MM-DiT architecture, which is capable of generating portrait animation videos featuring multi-person conversations, high consistency, high dynamism, and audio-aligned emotions. To address the limitation of current methods in handling audio-driven animation for multiple characters, we design a Face Audio Adapter (FAA) for the face region, enabling separate audio-driven animation for each character. This module is primarily composed of cross-attention mechanisms. In addition, we introduce a character image injection module, which ensures character consistency while maintaining dynamic motion. We also design an Audio Mood Module (AMM) to align the emotions of video characters with those expressed in the audio, using reference images for audio emotion. Compared with existing audio-driven human animation methods, HunyuanVideo-Avatar not only generates more realistic videos, but also maintains high dynamism while preserving character consistency. Experimental results on both benchmark datasets and our newly proposed wild dataset demonstrate that our method achieves significant improvements over existing approaches in generating realistic portraits with diverse viewpoints in dynamic and immersive scenes.
         </div>
-        <!-- <div class="columns is-centered">
-          <img src="./static/my_images/teaser.png" class="interpolation-image" alt="Interpolate start reference image.">
-        </div> -->
       </div>
     </div>
   </div>
