@@ -1,1 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
 
+    <style> .results-carousel .item img { width: 512px; height: 512px; } </style>
+    <meta charset="utf-8">
+    <meta name="description"
+          content="MotionMaster: Training-free Camera Motion Transfer For Video Generation">
+    <meta name="keywords" content="Video Generation, Camera Motion transfer, Camera-Object Motion, Disentanglement">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HunyuanVideo-Avatar: Highly Dynamic And Consistent Audio-Driven Human Animation</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+
+      gtag('config', 'G-PYVRSFMDRL');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/favicon.svg">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+  </head>
+
+
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">HunyuanVideo-Avatar: Highly Dynamic And Consistent Audio-Driven Human Animation</h1>
+            <!-- <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://sjtuplayer.github.io/">Teng Hu</a><sup>1*</sup>,</span>
+              <span class="author-block">
+                <a href="https://zhangzjn.github.io/">Jiangning Zhang</a><sup>2*</sup>,</span>
+              <span class="author-block">
+                <a href="https://yiranran.github.io/">Ran Yi</a><sup>1#</sup>,
+              </span>
+              <span class="author-block">
+                <a>Yating Wang</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a>Hongrui Huang</a><sup>3</sup>,
+              </span>
+              <br />
+              <span class="author-block">
+                <a > Jieyu Weng</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a>Yabiao Wang</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a >Lizhuang Ma</a><sup>1</sup>
+              </span>
+            </div> -->
+            <!-- <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Shanghai Jiao Tong University, Shanghai, China</span><br />
+              <span class="author-block"><sup>2</sup>Youtu Lab, Tencent, Shanghai, China </span><br />
+              <span class="author-block"><sup>3</sup>Harbin Institute of Technology, Harbin, China </span>
+            </div> -->
+  
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href=""
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href=""
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href=""
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                    </a>
+                </span>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- <section class="section" id="teaser">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <div class="column has-text-centered">
+        <div class="content">
+          <h3 class="title is-4">
+            Camera Motion Control
+          </h3>
+          <div class="item">
+<iframe width="1024" height="576" src="https://www.youtube.com/embed/o3Fk4RgWC4A?si=RXqn2DaPy_4QfQYC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+</section> -->
+
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Audio-driven human animation has made significant progress in recent years. However, existing state-of-the-art methods still face challenges in handling multi-speaker audio-driven scenarios, non-frontal viewpoints, rendering facial emotions of portraits, and generating immersive, realistic backgrounds. In this paper, we propose HunyuanVideo-Avatar, a model based on the MM-DiT architecture, which is capable of generating portrait animation videos featuring multi-person conversations, high consistency, high dynamism, and audio-aligned emotions. To address the limitation of current methods in handling audio-driven animation for multiple characters, we design a Face Audio Adapter (FAA) for the face region, enabling separate audio-driven animation for each character. This module is primarily composed of cross-attention mechanisms. In addition, we introduce a character image injection module, which ensures character consistency while maintaining dynamic motion. We also design an Audio Mood Module (AMM) to align the emotions of video characters with those expressed in the audio, using reference images for audio emotion. Compared with existing audio-driven human animation methods, HunyuanVideo-Avatar not only generates more realistic videos, but also maintains high dynamism while preserving character consistency. Experimental results on both benchmark datasets and our newly proposed wild dataset demonstrate that our method achieves significant improvements over existing approaches in generating realistic portraits with diverse viewpoints in dynamic and immersive scenes.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+
+
+
+</html>
