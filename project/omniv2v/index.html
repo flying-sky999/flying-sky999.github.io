@@ -268,30 +268,19 @@
         <h2 class="title is-3" style="color: white;">Abstract</h2>
         <div class="content has-text-justified">
           <p style="color: white;">
-            The emergence of diffusion models has greatly propelled the progress
-            in image and video generation. Recently, some efforts have been
-            made in controllable video generation, including text-to-video,
-            image-to-video generation, video editing, and video motion control,
-            among which camera motion control is an important topic. However, existing camera motion control methods rely on training a
-            temporal camera module, and necessitate substantial computation
-            resources due to the large amount of parameters in video generation models. Moreover, existing methods pre-define camera motion
-            types during training, which limits their flexibility in camera control, preventing the realization of some specific camera controls,
-            such as various camera movements in films. Therefore, to reduce
-            training costs and achieve flexible camera control, we propose
-            MotionMaster, a novel training-free video motion transfer model, which
-            disentangles camera motions and object motions in source videos,
-            and transfers the extracted camera motions to new videos. We first
-            propose a one-shot camera motion disentanglement method to extract camera motion from a single source video, which separates
-            the moving objects from the background and estimates the camera
-            motion in the moving objects region based on the motion in the
-            background by solving a Poisson equation. Furthermore, we propose a few-shot camera motion disentanglement method to extract
-            the common camera motion from multiple videos with similar camera motions, which employs a window-based clustering technique
-            to extract the common features in temporal attention maps of multiple videos. Finally, we propose a motion combination method to
-            combine different types of camera motions together, enabling our
-            model a more controllable and flexible camera control. Extensive
-            experiments demonstrate that our training-free approach can effectively decouple camera-object motion and apply the decoupled
-            camera motion to a wide range of controllable video generation
-            tasks, achieving flexible and diverse camera motion control.
+            The emergence of Diffusion Transformers (DiT) has brought significant advancements to video generation, 
+            especially in text-to-video and image-to-video tasks. Although video generation is widely applied in various fields, 
+            most existing models are limited to single scenarios and cannot perform diverse video generation and editing through 
+            dynamic content manipulation. We propose OmniV2V, a video model capable of generating and editing videos across 
+            different scenarios based on various operations, including: object movement, object addition, mask-guided video edit, 
+            try-on, inpainting, outpainting, human animation, and  controllable character video synthesis. We explore a unified 
+            dynamic content manipulation injection module, which effectively integrates the requirements of the above tasks. 
+            In addition, we design a visual-text instruction module based on LLaVA, enabling the model to effectively understand 
+            the correspondence between visual content and instructions.  Furthermore, we build a comprehensive multi-task data 
+            processing system. Since there is data overlap among various tasks, this system can efficiently provide data augmentation.
+             Using this system, we construct a multi-type, multi-scenario OmniV2V dataset and its corresponding OmniV2V-Test benchmark.
+              Extensive experiments show that OmniV2V works as well as, and sometimes better than, the best existing open-source and 
+              commercial models for many video generation and editing tasks.
         </div>
       </div>
     </div>
